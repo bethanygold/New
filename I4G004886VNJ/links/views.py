@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
 from .models import Link
-from .serizliers import LinkSerializer
+from .serializers import LinkSerializer
 
 from django.utils import timezone
 
@@ -10,7 +10,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from . import models 
-from .serizliers import serializers
+from . import serializers
 
 import datetime
 # Create your views here.
